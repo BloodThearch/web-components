@@ -1,0 +1,46 @@
+.main-screen {
+    min-height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.rel {
+    position: relative;
+}
+
+.all-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.ripple {
+    height: 400px;
+    width: 400px;
+    border: black solid 3px;
+    border-radius: 100%;
+    animation-name: ripple-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-delay: 0.01;
+    position: absolute;
+}
+
+@keyframes ripple-anim {
+    from {
+        height: 0;
+        width: 0;
+        opacity: 100%;
+    }
+    to {
+        height: 400px;
+        width: 400px;
+        opacity: 0%;
+    }
+}
