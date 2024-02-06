@@ -1,0 +1,43 @@
+.main-screen {
+    min-height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.all-center {
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    min-height: 100vh;
+}
+
+@keyframes fade-in-anim {
+    from {
+        transform: translateY(-150px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+.fade-in {
+    animation: fade-in-anim 0.4s ease-out;
+    animation-fill-mode: both
+}
+
+.scroll-invis {
+    visibility: hidden;
+}

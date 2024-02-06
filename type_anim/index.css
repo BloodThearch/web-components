@@ -1,0 +1,28 @@
+.main-screen {
+    min-height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.all-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.rel {
+    position: relative;
+}
+
+.type-anim-align {
+    position: absolute;
+    transform: translateX(-310px);
+    width: 300px;
+    display: flex;
+    justify-content: end;
+}
