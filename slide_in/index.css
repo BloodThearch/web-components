@@ -1,0 +1,47 @@
+.main-screen {
+    min-height: 90vh;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.rel {
+    position: relative;
+}
+
+.all-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.invis {
+    visibility: hidden;
+}
+
+.slide-in-mask {
+    overflow: hidden;
+}
+
+.slide-in {
+    animation: slide-in 0.8s ease-in;
+    animation-fill-mode: both;
+    position: absolute;
+}
+
+.just-center {
+    align-items: center;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
